@@ -24,6 +24,8 @@ Tabs[]=apps
 Tabs[]=trasparenza
 
 [Topmenu_apps]
+# Icon - (optional) the name of an icon admin4 draws before the tab's name: a name of design.ini [AdminDesignSettings] IconList[] (Bootstrap Icons); a name it does not know draws no icon.
+Icon=puzzle
 NavigationPartIdentifier=ezappsnavigationpart
 Name=Apps
 Tooltip=Gestisci contenuti delle apps
@@ -41,6 +43,8 @@ Shown[browse]=false
 PolicyList[]=apps/dashboard
 
 [Topmenu_trasparenza]
+# Icon - (optional) the name of an icon admin4 draws before the tab's name: a name of design.ini [AdminDesignSettings] IconList[] (Bootstrap Icons); a name it does not know draws no icon.
+Icon=journal-text
 NavigationPartIdentifier=eztrasparenzanavigationpart
 Name=Amministrazione Trasparente
 Tooltip=Amministrazione Trasparente
