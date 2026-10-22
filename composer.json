@@ -1,16 +1,33 @@
 {
-    "name": "opencontent/openpa-ls",
-    "description": "OpenContent OpenPA",
+    "name": "se7enxweb/openpa",
+    "description": "OpenPA: the OpenContent toolkit for Italian public administration websites on Exponential (sito istituzionale, Amministrazione Trasparente, organigramma, Apps section, SEO, automatic state and section changes).",
     "type": "ezpublish-legacy-extension",
-    "authors": [        
+    "keywords": ["exponential", "exponential-extension", "ezpublish-legacy", "openpa", "opencontent", "public administration", "pubblica amministrazione", "amministrazione trasparente"],
+    "homepage": "https://github.com/se7enxweb/openpa",
+    "license": "GPL-2.0-only",
+    "authors": [
         {
             "name": "OpenContent",
-            "homepage": "http://www.opencontent.it"
+            "homepage": "https://www.opencontent.it",
+            "role": "Original author"
+        },
+        {
+            "name": "7x",
+            "homepage": "https://se7enx.com",
+            "email": "info@se7enx.com",
+            "role": "Maintainer"
         }
     ],
-    "license": "GPL-2.0",    
-    "minimum-stability": "dev",    
+    "support": {
+        "issues": "https://github.com/se7enxweb/openpa/issues",
+        "source": "https://github.com/se7enxweb/openpa"
+    },
+    "require": {
+        "php": ">=8.0",
+        "se7enxweb/ezpublish-legacy-installer": "*"
+    },
     "extra": {
+        "installer-name": "openpa",
         "ezpublish-legacy-extension-name": "openpa"
     }
 }

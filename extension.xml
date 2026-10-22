@@ -2,14 +2,43 @@
 <software>
     <metadata>
         <name>OpenContent OpenPA Extension</name>
-        <version>1.0</version>
-        <copyright>Copyright © 2010 OpenContent</copyright>
+        <version>2.43.4</version>
+        <copyright>Copyright (C) 2010-2024 OpenContent; Copyright (C) 2026 7x</copyright>
         <license>GNU General Public License v2.0</license>
+        <info_url>https://github.com/se7enxweb/openpa</info_url>
+        <software>
+            <uses>
+                <name>Browser.php (lib/Browser.php)</name>
+                <version>1.9</version>
+                <copyright>Copyright (C) 2008-2010 Chris Schuld</copyright>
+                <license>GNU General Public License v2.0 or later</license>
+                <info_url>http://chrisschuld.com/</info_url>
+            </uses>
+            <uses>
+                <name>PHP browser detection (lib/browser_detection.php)</name>
+                <version>5.4.0</version>
+                <copyright>Copyright (C) 2011 Harald Hope</copyright>
+                <license>GNU General Public License v3.0 or later</license>
+                <info_url>http://techpatterns.com/downloads/php_browser_detection.php</info_url>
+            </uses>
+            <uses>
+                <name>reCAPTCHA PHP library (lib/recaptchalib.php)</name>
+                <copyright>Copyright (c) 2007 reCAPTCHA</copyright>
+                <license>MIT</license>
+                <info_url>http://recaptcha.net/plugins/php/</info_url>
+            </uses>
+            <uses>
+                <name>Symfony Yaml component (lib/Yaml)</name>
+                <copyright>Copyright (c) 2004-2014 Fabien Potencier</copyright>
+                <license>MIT</license>
+                <info_url>https://symfony.com/components/Yaml</info_url>
+            </uses>
+        </software>
     </metadata>
 
     <dependencies>
         <requires>
-            <extension name="ezmultiupload" />            
+            <extension name="ezmultiupload" />
         </requires>
         <extends>
             <extension name="ezwebin" />
