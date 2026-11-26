@@ -25,15 +25,17 @@ try
     $output = new ezcConsoleOutput();
     
     $ini = eZINI::instance();
-    $userToChange = eZUser::fetch( $options['user'] ) ? eZUser::fetch( $options['user'] ) :
-        eZUser::fetchByName( $options['user'] ) ?  eZUser::fetchByName( $options['user'] ) :
-        eZUser::fetchByEmail( $options['user'] ) ? eZUser::fetchByEmail( $options['user'] ) : false;
+    $userToChange = eZUser::fetch( $options['user'] )
+        ?: eZUser::fetchByName( $options['user'] )
+        ?: eZUser::fetchByEmail( $options['user'] )
+        ?: false;
 
     $newPassword = $options['new'];
 
-    $userToRemove = eZUser::fetch( $options['remove_user'] ) ? eZUser::fetch( $options['remove_user'] ) :
-        eZUser::fetchByName( $options['remove_user'] ) ?  eZUser::fetchByName( $options['remove_user'] ) :
-        eZUser::fetchByEmail( $options['remove_user'] ) ? eZUser::fetchByEmail( $options['remove_user'] ) : false;    
+    $userToRemove = eZUser::fetch( $options['remove_user'] )
+        ?: eZUser::fetchByName( $options['remove_user'] )
+        ?: eZUser::fetchByEmail( $options['remove_user'] )
+        ?: false;
     
     if ( $userToChange instanceof eZUser )
     {        
